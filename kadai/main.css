@@ -1,17 +1,27 @@
-
 * {
 box-sizing: border-box;
+background-color: #f1f5bb;
 }
+
 #app {
 max-width: 640px;
 margin: 0 auto;
 }
+
+h1{
+    color: #ee8989;
+}
+
+h2{
+    margin-top: 60px;
+}
+
 table {
 width: 100%;
 border-collapse: collapse;
 }
 thead th {
-border-bottom: 2px solid #e40000; /*#d31c4a */
+border-bottom: 2px solid #ee8989; /*#d31c4a */
 color: #0099e4;
 }
 th,
@@ -20,7 +30,7 @@ padding: 0 8px;
 line-height: 40px;
 }
 thead th.id {
-width: 50px;
+width: 80px;
 }
 thead th.state {
 width: 100px;
@@ -50,7 +60,13 @@ border: none;
 border-radius: 20px;
 line-height: 24px;
 padding: 0 8px;
-background: #8a2f2f;
+background: #ee8989;
 color: #fff;
 cursor: pointer;
+}
+
+.input--name{
+    height: 30px;
+    width: 200px;
+    border-color: #ee8989;
 }
