@@ -2,13 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>世界一シンプルなタスク管理ツール</title>
+<title>しゅくだいしよう</title>
 <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 
 <div id="app">
-<h1>ToDoMini</h1>
+<h1>しゅくだいしよう</h1>
 
 <label v-for="label in options" >
     <input type="radio"
@@ -16,14 +16,14 @@
     v-bind:value="label.value">{{ label.label }}
 </label>
     
-（{{ computedTodos.length }} 件を表示）
+（{{ computedTodos.length }} けんあるよ！）
 <table>
     <thead v-pre>
     <tr>
-        <th class="id">ID</th>
-        <th class="comment">コメント</th>
-        <th class="state">状態</th>
-        <th class="button">-</th>
+        <th class="id">ばんごう</th>
+        <th class="comment">しゅくだいのなまえ</th>
+        <th class="state">おわった？</th>
+        <th class="button">ー</th>
     </tr>
     </thead>
     <tbody>
@@ -43,19 +43,22 @@
         <td class="button">
 
         <button v-on:click="doRemove(item)">
-            削除
+            けす
         </button>
         </td>
     </tr>
     </tbody>
 </table>
 
-<h2>新しい作業の追加</h2>
+<h2>あたらしいしゅくだいをついかしよう！</h2>
 <form class="add-form" v-on:submit.prevent="doAdd">
     <!-- コメント入力フォーム -->
-    タスク名 <input type="text" ref="comment">
+    しゅくだいのなまえ <input class="input--name" 
+    type="text" 
+    ref="comment"
+    placeholder="しゅくだいをついかしよう!">
     <!-- 追加ボタンのモック -->
-    <button type="submit">追加</button>
+    <button type="submit">ついか</button>
 </form>
 </div>
 
